@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     Button inc;
     TextView counterVal;
     Button reset;
+    Button decr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,12 +25,22 @@ public class MainActivity extends AppCompatActivity {
         Button inc= findViewById(R.id.Increment_btn);
         TextView counterVal= findViewById(R.id.textView);
         Button reset=findViewById(R.id.reset_btn);
+        Button decr=findViewById(R.id.decrement_btn);
 
         inc.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view) {
                 counter ++;
+                counterVal.setText(Integer.toString(counter));
+            }
+        });
+
+        decr.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view) {
+                counter --;
                 counterVal.setText(Integer.toString(counter));
             }
         });
