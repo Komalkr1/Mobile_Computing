@@ -23,14 +23,15 @@
 
     <Button
         android:id="@+id/Increment_btn"
-        android:layout_width="193dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="112dp"
+        android:layout_width="141dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="128dp"
         android:shadowColor="#8BC34A"
         android:text="COUNT++"
         android:textSize="20sp"
         app:backgroundTint="#8BC34A"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -45,17 +46,21 @@
         app:backgroundTint="#009688"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Increment_btn"
-        app:layout_constraintVertical_bias="0.155" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <Button
         android:id="@+id/decrement_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="162dp"
-        tools:layout_editor_absoluteY="365dp" />
+        android:layout_width="141dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="128dp"
+        android:text="Count--"
+        android:textSize="20sp"
+        app:backgroundTint="#F46C36"
+        app:layout_constraintStart_toEndOf="@+id/Increment_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

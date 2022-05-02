@@ -12,10 +12,6 @@ package com.example.counter;
 
 public class MainActivity extends AppCompatActivity {
     private int counter = 0;
-    Button inc;
-    TextView counterVal;
-    Button reset;
-    Button decr;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
         {
             @Override
             public void onClick(View view) {
-                counter --;
+                if(counter!=0)
+                    counter--;
                 counterVal.setText(Integer.toString(counter));
             }
         });
