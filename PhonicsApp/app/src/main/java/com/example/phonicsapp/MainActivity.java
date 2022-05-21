@@ -42,7 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(intent);
                 break;
             default:
-                  
+                intent = new Intent(MainActivity.this, MainActivity4.class);
+                startActivity(intent);
 
         }
 

@@ -3,9 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Programs/MC/PhonicsApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Programs/MC/PhonicsApp/app/src/main/res/layout/activity_main2.xml" value="0.18" />
+        <entry key="..\:/Programs/MC/PhonicsApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Programs/MC/PhonicsApp/app/src/main/res/layout/activity_main2.xml" value="0.2" />
         <entry key="..\:/Programs/MC/PhonicsApp/app/src/main/res/layout/activity_main3.xml" value="0.2" />
+        <entry key="..\:/Programs/MC/PhonicsApp/app/src/main/res/layout/activity_main4.xml" value="0.25" />
       </map>
     </option>
   </component>
