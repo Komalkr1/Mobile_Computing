@@ -9,12 +9,15 @@ import android.widget.Button;
 
 public class MainActivity3 extends AppCompatActivity implements View.OnClickListener{
 
-    Button a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z;
+    Button a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z,attemptBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
+
+        attemptBtn=findViewById(R.id.Attempt);
+        attemptBtn.setOnClickListener(this);
 
         a = findViewById(R.id.a);
         a.setOnClickListener(this);
@@ -102,6 +105,9 @@ public class MainActivity3 extends AppCompatActivity implements View.OnClickList
         Intent intent = new Intent(MainActivity3.this, MainActivity2.class);
         switch (v.getId()) {
 
+            case R.id.Attempt:
+                intent = new Intent(MainActivity3.this, MainActivity4.class);
+                break;
             case R.id.a:
                 intent.putExtra("input", "a");
                 break;

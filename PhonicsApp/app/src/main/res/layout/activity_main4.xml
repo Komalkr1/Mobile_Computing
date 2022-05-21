@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".MainActivity4">
 
     <TextView
         android:id="@+id/question"
-        android:layout_width="388dp"
-        android:layout_height="115dp"
+        android:layout_width="360dp"
+        android:layout_height="111dp"
         android:text="Question:                                                     Following image represents a word that starts with:"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,8 +22,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="279dp"
-        android:layout_height="214dp"
+        android:layout_width="286dp"
+        android:layout_height="197dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -35,7 +36,7 @@
         android:layout_width="369dp"
         android:layout_height="50dp"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="2dp"
         android:text="a)  A"
         android:textAlignment="viewStart"
@@ -101,5 +102,18 @@
         app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Op1" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="108dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="Exit"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:backgroundTint="#00ACC1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Op4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
