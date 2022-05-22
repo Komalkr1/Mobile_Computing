@@ -3,11 +3,12 @@ package com.example.phonicsapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity2 extends AppCompatActivity {
-
+    private static final String TAG="MainActivity2";
     ImageView openImg;
     String inputLetter;
     @Override
@@ -15,6 +16,7 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+        Log.d(TAG, " onCreate Activity Main 2 i.e. Alphabet Image Show");
 
         openImg=findViewById(R.id.imageView);
         inputLetter=getIntent().getStringExtra("input");
@@ -98,5 +100,47 @@ public class MainActivity2 extends AppCompatActivity {
             default:
                 openImg.setImageResource(R.drawable.z);;
         }
+    }
+
+    @Override
+
+    protected void onStart(){
+        super.onStart();
+        Log.d(TAG, " onStart Activity Main 2 i.e. Alphabet Image Show");
+    }
+
+    @Override
+
+    protected void onResume(){
+        super.onResume();
+        Log.d(TAG, " onResume Activity Main 2 i.e. Alphabet Image Show");
+    }
+
+    @Override
+
+    protected void onPause(){
+        super.onPause();
+        Log.d(TAG, " onPause Activity Main 2 i.e. Alphabet Image Show");
+    }
+
+    @Override
+
+    protected void onStop(){
+        super.onStop();
+        Log.d(TAG, " onStop Activity Main 2 i.e. Alphabet Image Show");
+    }
+
+    @Override
+
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.d(TAG, " onDestroy Activity Main 2 i.e. Alphabet Image Show");
+    }
+
+    @Override
+
+    protected void onRestart(){
+        super.onRestart();
+        Log.d(TAG, " onRestart Activity Main 2 i.e. Alphabet Image Show");
     }
 }

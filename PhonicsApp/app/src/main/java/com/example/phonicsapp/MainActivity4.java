@@ -6,11 +6,13 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity4 extends AppCompatActivity implements View.OnClickListener{
+    private static final String TAG="MainActivity4";
 
     Button op1,op2,op3,op4,exitBtn;
     public int mcq=1;
@@ -19,6 +21,8 @@ public class MainActivity4 extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
+
+        Log.d(TAG, " onCreate Activity Main 4 i.e. Mcq Test Module");
 
         op1=findViewById(R.id.Op1);
         op1.setOnClickListener(this);
@@ -213,5 +217,46 @@ public class MainActivity4 extends AppCompatActivity implements View.OnClickList
             op4.setEnabled(true);
         }
 
+    @Override
+
+    protected void onStart(){
+        super.onStart();
+        Log.d(TAG, " onStart Activity Main 4 i.e. Mcq Test Module");
+    }
+
+    @Override
+
+    protected void onResume(){
+        super.onResume();
+        Log.d(TAG, " onResume Activity Main 4 i.e. Mcq Test Module");
+    }
+
+    @Override
+
+    protected void onPause(){
+        super.onPause();
+        Log.d(TAG, " onPause Activity Main 4 i.e. Mcq Test Module");
+    }
+
+    @Override
+
+    protected void onStop(){
+        super.onStop();
+        Log.d(TAG, " onStop Activity Main 4 i.e. Mcq Test Module");
+    }
+
+    @Override
+
+    protected void onDestroy(){
+        super.onDestroy();
+        Log.d(TAG, " onDestroy Activity Main 4 i.e. Mcq Test Module");
+    }
+
+    @Override
+
+    protected void onRestart(){
+        super.onRestart();
+        Log.d(TAG, " onRestart Activity Main 4 i.e. Mcq Test Module");
+    }
 }
 
