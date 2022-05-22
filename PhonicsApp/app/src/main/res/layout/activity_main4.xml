@@ -1,119 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:visibility="visible"
-    tools:context=".MainActivity4">
-
-    <TextView
-        android:id="@+id/question"
-        android:layout_width="360dp"
-        android:layout_height="111dp"
-        android:text="Question:                                                     Following image represents a word that starts with:"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="286dp"
-        android:layout_height="197dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question"
-        app:srcCompat="@drawable/apple" />
-
-    <Button
-        android:id="@+id/Op1"
-        android:layout_width="369dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="2dp"
-        android:text="a)  A"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textColor="#5A5858"
-        android:textSize="20sp"
-        app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.368"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <Button
-        android:id="@+id/Op4"
-        android:layout_width="369dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="2dp"
-        android:text="d)  L"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textColor="#5A5858"
-        android:textSize="20sp"
-        app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.38"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Op3" />
-
-    <Button
-        android:id="@+id/Op3"
-        android:layout_width="369dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="2dp"
-        android:text="c)  F"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textColor="#5A5858"
-        android:textSize="20sp"
-        app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.38"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Op2" />
-
-    <Button
-        android:id="@+id/Op2"
-        android:layout_width="369dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="2dp"
-        android:text="b)  Z"
-        android:textAlignment="viewStart"
-        android:textAllCaps="false"
-        android:textColor="#5A5858"
-        android:textSize="20sp"
-        app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.368"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Op1" />
-
-    <Button
-        android:id="@+id/exit"
-        android:layout_width="108dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:text="Exit"
-        android:textSize="20sp"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:visibility="visible"
-        app:backgroundTint="#00ACC1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Op4" />
+        tools:context=".MainActivity4">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="360dp"
+            android:layout_height="111dp"
+            android:text="Question:                                                     Following image represents a word that starts with:"
+            android:textSize="28sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.025" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="286dp"
+            android:layout_height="197dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question"
+            app:srcCompat="@drawable/apple" />
+
+        <Button
+            android:id="@+id/Op1"
+            android:layout_width="369dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="2dp"
+            android:text="a)  A"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#5A5858"
+            android:textSize="20sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.368"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/Op4"
+            android:layout_width="369dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="2dp"
+            android:text="d)  L"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#5A5858"
+            android:textSize="20sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Op3" />
+
+        <Button
+            android:id="@+id/Op3"
+            android:layout_width="369dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="2dp"
+            android:text="c)  F"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#5A5858"
+            android:textSize="20sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Op2" />
+
+        <Button
+            android:id="@+id/Op2"
+            android:layout_width="369dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="2dp"
+            android:text="b)  Z"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="#5A5858"
+            android:textSize="20sp"
+            app:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.368"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Op1" />
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="108dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="Exit"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:backgroundTint="#00ACC1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Op4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

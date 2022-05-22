@@ -1,61 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/test"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/learn"
-        android:layout_width="327dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="40dp"
-        android:text="Learning Module"
-        android:textSize="24sp"
-        app:backgroundTint="#43A047"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <Button
+            android:id="@+id/learn"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:text="Learning Module"
+            android:textSize="24sp"
+            app:backgroundTint="#43A047"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <Button
-        android:id="@+id/testbtn"
-        android:layout_width="327dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="30dp"
-        android:text="Test Module"
-        android:textSize="24sp"
-        app:backgroundTint="#00897B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/learn" />
+        <Button
+            android:id="@+id/testbtn"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="Test Module"
+            android:textSize="24sp"
+            app:backgroundTint="#00897B"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/learn" />
 
-    <Button
-        android:id="@+id/repo"
-        android:layout_width="327dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="30dp"
-        android:text="Repository Link"
-        android:textSize="24sp"
-        app:backgroundTint="#00ACC1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/testbtn" />
+        <Button
+            android:id="@+id/repo"
+            android:layout_width="327dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="Repository Link"
+            android:textSize="24sp"
+            app:backgroundTint="#00ACC1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/testbtn" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="316dp"
-        android:layout_height="123dp"
-        android:layout_marginTop="60dp"
-        android:text="Welcome to Kids Phonics App"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="316dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="60dp"
+            android:text="Welcome to Kids Phonics App"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
