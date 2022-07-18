@@ -9,6 +9,8 @@ import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.Collections;
+
 public class MainActivity<ArrayList> extends AppCompatActivity {
 
     ListView listView;
@@ -38,10 +40,7 @@ public class MainActivity<ArrayList> extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 studentList.add(textView.getText().toString());
-//                studentList.add("Saad");
                 arrayAdapter.notifyDataSetChanged();
-
-
             }
         });
 

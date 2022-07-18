@@ -38,8 +38,10 @@
         android:layout_width="368dp"
         android:layout_height="325dp"
         android:layout_marginTop="32dp"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>
